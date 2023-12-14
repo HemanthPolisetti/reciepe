@@ -16,6 +16,7 @@ const getAllReciepies=async(req,res)=>{
 
 const addReciepies=async(req,res)=>{
     let newReciepe = req.body;
+    console.log(newReciepe)
     try{
         newReciepe=new Reciepe({
             title:newReciepe.title,
